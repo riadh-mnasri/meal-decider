@@ -1,4 +1,4 @@
-package com.riadh
+package com.riadh.mealdecider
 
 import org.junit.Test
 import org.junit.runner.RunWith

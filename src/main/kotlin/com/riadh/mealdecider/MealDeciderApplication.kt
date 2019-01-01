@@ -1,4 +1,4 @@
-package com.riadh
+package com.riadh.mealdecider
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
