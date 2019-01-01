@@ -5,15 +5,24 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 import reactor.core.publisher.Flux
+import reactor.core.publisher.Mono
 import reactor.core.publisher.toFlux
+import reactor.core.publisher.toMono
 
 @RestController
-@RequestMapping("/meals")
-class MealSuggestionController(val mealSuggestionRepository: MealSuggestionRepository){
+@RequestMapping
+class MealSuggestionController(val mealSuggestionService: MealSuggestionService){
 
-    @GetMapping
+    @GetMapping("/meals")
     fun getAllMealsSuggestions(): Flux<MealSuggestion>{
-        return mealSuggestionRepository.findAll().toFlux()
+        return mealSuggestionService.getAllMeals().toFlux()
     }
+
+    @GetMapping("/mealSuggestion")
+    fun getRandomSuggestion(): Mono<MealSuggestion> {
+        val foundSuggestion = mealSuggestionService.getRandomMealSuggestion() ?: return Mono.empty<MealSuggestion>()
+        return foundSuggestion.toMono()
+    }
+
 
 }
