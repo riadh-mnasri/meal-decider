@@ -1,2 +1,2 @@
 # meal-decider
-Meal Decider Service
+Meal Decider Web Service
