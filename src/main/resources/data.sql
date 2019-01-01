@@ -1,0 +1,1 @@
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Coucous', 'Couscous Agneau');
