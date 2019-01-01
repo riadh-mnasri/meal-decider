@@ -1,1 +1,10 @@
 INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Coucous', 'Couscous Agneau');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Omelette', 'Omelette Fromage');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Pâtes aux poissons', 'Pâtes aux poissons');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Chorba', 'Chorba aux poissons');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Lablabi', 'Lablabi');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Keftaji', 'Keftaji');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Tajine', 'Tajine');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Salade gourmande', 'Salade gourmande');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Kammounia', 'Kammounia');
+INSERT INTO MEAL_SUGGESTION (name, description) VALUES ('Poissons grillés', 'Poissons grillés');
